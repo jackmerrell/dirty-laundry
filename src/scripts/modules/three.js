@@ -19,7 +19,8 @@ const three = () => {
   document.body.appendChild(renderer.domElement);
 
   const material = new THREE.MeshDepthMaterial({
-    wireframe: false,
+    wireframe: true,
+    displacementScale: 2,
   });
 
   const loader = new GLTFLoader();
