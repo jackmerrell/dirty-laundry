@@ -31,6 +31,12 @@ const three = () => {
     renderer.render(scene, camera);
   };
   animate();
+
+  window.onresize = () => {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  };
 };
 
 export default three;
