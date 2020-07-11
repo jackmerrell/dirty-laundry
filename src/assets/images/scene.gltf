@@ -1,0 +1,269 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 7925,
+      "max": [
+        0.97195351123809814,
+        0.37971967458724976,
+        -3.9916467666625977
+      ],
+      "min": [
+        -0.4348425567150116,
+        -0.13761831820011139,
+        -4.5168094635009766
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 95100,
+      "componentType": 5126,
+      "count": 7925,
+      "max": [
+        0.99909579753875732,
+        0.99992543458938599,
+        0.99991065263748169
+      ],
+      "min": [
+        -0.99967515468597412,
+        -0.99999666213989258,
+        -0.99996435642242432
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 7925,
+      "max": [
+        0.99965125322341919,
+        0.9630933403968811
+      ],
+      "min": [
+        0.00031909343670122325,
+        9.9122524261474609e-05
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 63400,
+      "componentType": 5126,
+      "count": 7925,
+      "max": [
+        0.99965125322341919,
+        0.9630933403968811
+      ],
+      "min": [
+        0.00031909343670122325,
+        9.9122524261474609e-05
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 44874,
+      "max": [
+        7924
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "jothieswaranr (https://sketchfab.com/jothieswaranr)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/blue-shoe-bc6c5204b9374c17abd5e2ae97fe8744",
+      "title": "Blue Shoe"
+    },
+    "generator": "Sketchfab-8.72.3",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 179496,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 126800,
+      "byteOffset": 179496,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 190200,
+      "byteOffset": 306296,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 496496,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/blue_Shoe_01blinn1_baseColor.jpeg"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "blue_Shoe_01blinn1",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0.59999999999999998
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "blue_Shoe_01:blue_Shoe_01:Model_blue_Shoe_01:blinn1_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2,
+            "TEXCOORD_1": 3
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "9be3dc6e7add445aa9610756cc41057c.fbx"
+    },
+    {
+      "children": [
+        4
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        5
+      ],
+      "matrix": [
+        32.703792212334662,
+        -1.6186927141504355,
+        -0.061776701733154166,
+        0,
+        1.6198711256518932,
+        32.68000110681151,
+        1.2472179947225372,
+        0,
+        -1.3738883631664485e-15,
+        -1.2487470068980082,
+        32.720064768335121,
+        0,
+        -10.978867530822754,
+        -0.50554722547531128,
+        135.06422424316406,
+        1
+      ],
+      "name": "blue_Shoe_01:blue_Shoe_01:Model"
+    },
+    {
+      "mesh": 0,
+      "name": "blue_Shoe_01:blue_Shoe_01:Model_blue_Shoe_01:blinn1_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    }
+  ]
+}
+
