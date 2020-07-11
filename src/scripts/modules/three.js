@@ -10,11 +10,11 @@ const three = () => {
     0.1,
     1000,
   );
-  camera.position.z = 0.75;
+  camera.position.z = 0.6;
   camera.position.y = 0.05;
 
   const settings = {
-    displacementScale: 2.436143,
+    displacementScale: 0,
     wireframe: false,
   };
 
@@ -30,7 +30,7 @@ const three = () => {
   const material = new THREE.MeshDepthMaterial({
     wireframe: false,
     displacementMap: texture,
-    displacementScale: 0.2,
+    displacementScale: 0,
   });
 
   const loader = new GLTFLoader();
