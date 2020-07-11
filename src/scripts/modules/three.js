@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import { GUI } from 'three/examples/jsm/libs/dat.gui.module';
 
 const three = () => {
   const scene = new THREE.Scene();
@@ -9,8 +10,13 @@ const three = () => {
     0.1,
     1000,
   );
-  camera.position.z = 0.4;
+  camera.position.z = 0.75;
   camera.position.y = 0.05;
+
+  const settings = {
+    displacementScale: 2.436143,
+    wireframe: false,
+  };
 
   const renderer = new THREE.WebGLRenderer({
     antialias: true,
@@ -18,9 +24,13 @@ const three = () => {
   renderer.setSize(window.innerWidth, window.innerHeight);
   document.body.appendChild(renderer.domElement);
 
+  const texture = new THREE.TextureLoader().load(
+    'assets/images/textures/blue_Shoe_01blinn1_depth.jpg',
+  );
   const material = new THREE.MeshDepthMaterial({
-    wireframe: true,
-    displacementScale: 2,
+    wireframe: false,
+    displacementMap: texture,
+    displacementScale: 0.2,
   });
 
   const loader = new GLTFLoader();
@@ -46,6 +56,18 @@ const three = () => {
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
   };
+
+  const gui = new GUI();
+  gui
+    .add(settings, 'displacementScale')
+    .min(0)
+    .max(2.0)
+    .onChange(value => {
+      material.displacementScale = value;
+    });
+  gui.add(settings, 'wireframe').onChange(value => {
+    material.wireframe = value;
+  });
 };
 
 export default three;
