@@ -1,0 +1,16 @@
+{
+  "generator-chisel": {
+    "config": {
+      "name": "Dirty Laundry",
+      "author": "Jack Merrell",
+      "projectType": "fe",
+      "nameSlug": "dirty-laundry",
+      "nameCamel": "DirtyLaundry",
+      "chiselVersion": "0.16.1",
+      "has_jquery": false
+    },
+    "pages": [
+      "index"
+    ]
+  }
+}
