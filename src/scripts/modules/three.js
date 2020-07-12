@@ -61,7 +61,7 @@ const three = () => {
   gui
     .add(settings, 'displacementScale')
     .min(0)
-    .max(2.0)
+    .max(0.2)
     .onChange(value => {
       material.displacementScale = value;
     });
