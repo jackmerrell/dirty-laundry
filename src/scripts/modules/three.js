@@ -25,7 +25,7 @@ const three = () => {
   document.body.appendChild(renderer.domElement);
 
   const texture = new THREE.TextureLoader().load(
-    'assets/images/textures/blue_Shoe_01blinn1_depth.jpg',
+    'assets/images/textures/depth-test.jpg',
   );
   const material = new THREE.MeshDepthMaterial({
     wireframe: false,
