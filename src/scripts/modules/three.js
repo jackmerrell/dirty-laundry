@@ -25,7 +25,7 @@ const three = () => {
   document.body.appendChild(renderer.domElement);
 
   const texture = new THREE.TextureLoader().load(
-    'assets/images/textures/depth-test.jpg',
+    'assets/images/textures/depth.jpg',
   );
   const material = new THREE.MeshDepthMaterial({
     wireframe: false,
@@ -61,7 +61,7 @@ const three = () => {
   gui
     .add(settings, 'displacementScale')
     .min(0)
-    .max(0.2)
+    .max(0.1)
     .onChange(value => {
       material.displacementScale = value;
     });
