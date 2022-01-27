@@ -93,7 +93,7 @@
   },
   "dependencies": {
     "normalize-scss": "^7.0.1",
-    "three": "^0.118.3"
+    "three": "^0.137.0"
   },
   "engines": {
     "node": "11.3.0",
